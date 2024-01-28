@@ -31,7 +31,7 @@ pipeline {
     stage('SonarQube Analysis') {
       steps{
         withSonarQubeEnv('sonar-server') {
-        sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=khalil-MCI -Dsonar.projectName='khalil-MCI'"
+        sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=MonprojetDocker -Dsonar.projectName='MonprojetDocker'"
       }
     }
      
